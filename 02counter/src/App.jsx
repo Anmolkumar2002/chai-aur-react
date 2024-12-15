@@ -15,7 +15,9 @@ function App() {
   }
 
   const subtractValue = () => {
-    setCounter(counter - 1)
+    counter = counter - 1
+    if(counter < 0) counter = 0
+    setCounter(counter)
   }
  
   return (
